@@ -1,0 +1,28 @@
+#container{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+#plantContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 20px;
+    row-gap: 20px;
+    
+}
+#plantBox{
+    display: flex;
+    justify-content: center;
+    border: solid 1px black;
+    height: 250px; width: 250px;
+    font-size: 50px;
+
+}
+#cartContainer{
+    border: solid black;
+    height: 500px;
+    width: 200px;
+}
+#plantImg{
+    font-size: 50px;
+}
