@@ -1,9 +1,19 @@
-export default function Cart(){
+export default function Cart({ cart, removeFromCart }){
     return(
         <div id="cartContainer">
-            test
+            <h2>Shopping Cart</h2>
+            {cart.length > 0 ? (
+                cart.map((plant, index) => (
+                    <div key={index}>
+                        <span>{plant.name}</span>
+                        <button onClick={() => removeFromCart(index)}>Remove</button>
+                    </div>
+                ))
+            ) : (
+                <p>Your cart is empty.</p>
+            )}
         </div>
-    )
+    );
 
     
 }

@@ -12,7 +12,9 @@
 }
 #plantBox{
     display: flex;
+    text-align: center;
     justify-content: center;
+    flex-direction: column;
     border: solid 1px black;
     height: 250px; width: 250px;
     font-size: 50px;
@@ -24,5 +26,19 @@
     width: 200px;
 }
 #plantImg{
-    font-size: 50px;
+    font-size: 75px;
+    
+}
+#plantName{
+    font-size: 35px;
+}
+#plantButton{
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+#plantButton:hover{
+    margin: 19px;
+    border: 1px solid black;
 }
