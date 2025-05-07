@@ -7,7 +7,7 @@ export default function AvailablePlants({ addToCart }) {
                 <div id="plantBox" key={plant.name}>
                     <div id="plantImg">{plant.image}</div>
                     <div id="plantName">{plant.name}</div>
-                    <button id="plantButton" onClick={() => addToCart(plant)}>Add To Cart</button>
+                    <button onClick={() => addToCart(plant)}>Add To Cart</button>
                 </div>
             ))}
         </div>

@@ -21,9 +21,18 @@
 
 }
 #cartContainer{
+    display: flex;
+    flex-direction: column ;
     border: solid black;
-    height: 500px;
-    width: 200px;
+    height: 1000px;
+    width: 600px;
+    row-gap: 10px;
+}
+#cartInfoContainer{
+    display: flex;
+    justify-content: center;
+    border: solid 1px black;
+    margin: 10px;
 }
 #plantImg{
     font-size: 75px;
@@ -32,13 +41,24 @@
 #plantName{
     font-size: 35px;
 }
-#plantButton{
+button{
     margin: 20px;
     border: none;
     border-radius: 10px;
     background-color: greenyellow;
 }
-#plantButton:hover{
+button:hover{
     margin: 19px;
     border: 1px solid black;
+}
+#cartInfo{
+    font-size: 30px;
+}
+.cartButton{
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: greenyellow;
+    height: 25px;
+    width: 75px;
 }
